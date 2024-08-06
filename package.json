@@ -1,0 +1,33 @@
+{
+  "name": "ts-node-template",
+  "version": "1.0.0",
+  "description": "A template for a Node.js application using Typescript",
+  "keywords": [
+    "node",
+    "typescript",
+    "template"
+  ],
+  "license": "ISC",
+  "author": "Dmitry Seleznyov <selim013@gmail.com>",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "tsx src/index.ts",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pino": "^9.3.2",
+    "pino-pretty": "^11.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.14",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.1",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
